@@ -1,0 +1,200 @@
+.logo{
+    background-color: blue;
+    width: 40px;
+    height: 20px
+}
+.logo img {
+    width: 164px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Segoe UI";
+    flex-wrap: wrap; /* responsive */
+}
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.right ul li span {
+    padding: 0 5px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin: 70px;
+    font-family: sans-serif;
+}
+.first span{
+    font-size: 37px;
+}
+section span img{
+    width: 82px;
+    margin: 0 23px;
+}
+.first p{
+    font-size: 23px;
+    width: 57vw;
+    text-align: center;
+}
+.first button{
+    background-color: #00b6d1;
+    color: white;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+}
+.btn{
+    background-color: #00b6d1;
+    color: white;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.green{
+    background-color: #5cb85c;
+}
+.flex{
+    display: flex;
+}
+.small{
+    font-size: 12px;
+}
+.second{
+    max-width: 65vw;
+    margin: auto;
+}
+.item{
+    padding: 23px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    font-size: 20px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item-lang{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive */
+}
+.download :nth-child(2){
+    font-size: 23px;
+}
+.download img{
+    padding: 0px;
+}
+.download{
+    display: flex;
+    gap: 10px;
+    font-family: sans-serif;
+    align-items: center;
+}
+.icon img{
+            width: 200%;
+            height: auto;
+            cursor: pointer;
+        }
+.icon{
+        height: 60px;
+        width: 60px;
+        position: fixed;
+        bottom: 2px;
+        right: 110px;
+    }
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .first span {
+        font-size: 26px;
+    }
+
+    .first p {
+        font-size: 16px;
+    }
+
+    .download {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .first span {
+        font-size: 22px;
+    }
+    .first p {
+        font-size: 15px;
+    }
+    .download :nth-child(2) {
+        font-size: 18px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+#toggle{
+    position: fixed;
+    right: 0;
+    display:none;
+    height:50px;
+    width: 50px;
+}
+@media (max-width: 768px) {
+    #toggle {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: transparent;
+        border: none;
+        font-size: 28px;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    #abc {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        color: #f9f9f9;
+        background-color: black;
+        padding: 10px 0;
+    }
+
+    #abc.active {
+        display: flex;
+    }
+
+    .right ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+        
+    }
+}
